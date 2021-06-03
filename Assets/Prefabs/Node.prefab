@@ -205,4 +205,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tile: {fileID: 4148969252351189472}
-  borderSize: 0.3
+  borderSize: 0.2

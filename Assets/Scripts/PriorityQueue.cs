@@ -48,46 +48,10 @@ public class PriorityQueue<T> where T : IComparable<T>
         T toppItem = data[0];
 
         data[0] = data[lastIndex];
-
         data.RemoveAt(lastIndex);
-        lastIndex--;
 
         int parentIndex = 0;
-
-
         ReorderQue(parentIndex);
-
-        //while (true)
-        //{
-        //    int childIndex = parentIndex * 2 + 1;
-        //    int rightChild = childIndex + 1;
-
-        //    // check if child even exists
-        //    if (childIndex > lastIndex)
-        //    {
-        //        break;
-        //    }
-
-        //    // if right child value is lesser than left one - go to that index
-        //    if (rightChild <= lastIndex && data[rightChild].CompareTo(data[childIndex]) < 0)
-        //    {
-        //        childIndex = rightChild;
-        //    }
-
-        //    // if the child is equal or smaller then the parent - stop
-        //    if (data[parentIndex].CompareTo(data[childIndex]) <= 0)
-        //    {
-        //        break;
-        //    }
-
-        //    // otherwise - swap
-        //    T temp = data[parentIndex];
-        //    data[parentIndex] = data[childIndex];
-        //    data[childIndex] = temp;
-
-        //    // swap index to value's new pos
-        //    parentIndex = childIndex;
-        //}
 
         return toppItem;
     }
